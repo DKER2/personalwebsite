@@ -1,5 +1,6 @@
 import React from 'react';
 import {Dot, ArrowRight} from 'react-bootstrap-icons';
+import styles from './TimeLine.module.css';
 
 function TimeLine(props){
     var timeLine = props.timeLine;
@@ -37,7 +38,7 @@ function TimeLine(props){
         )
     }
     return(
-        <div>
+        <div style={{opacity:props.opacity}}>
             {timeLine.map((timeLine, index) =>{
                 return(<OneTimeLine key={index} timeLine={timeLine}/>)
             })}

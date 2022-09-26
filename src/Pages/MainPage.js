@@ -1,9 +1,11 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Animation from "../Components/Animation";
 import ProfilePicture from '../Components/ProfilePicture';
 import TimeLine from '../Components/TimeLine';
+import styles from './MainPage.module.css';
 
 function MainPage(props){
+    const [proportion, setProportion] = useState(0);
     const refExperience = useRef(null);
     const refProject = useRef(null);
     const refEducation = useRef(null);
@@ -36,6 +38,21 @@ function MainPage(props){
     useEffect(() => {scrollTo(props.scrollDestination)}, 
     [props.scroll])
 
+    const handleScroll = () => {
+        const position = window.pageYOffset;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        console.log(position/height);
+        setProportion(position/height);
+    };
+    
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll, { passive: true });
+    
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return(
         <div>
             <Animation/>
@@ -43,17 +60,17 @@ function MainPage(props){
             <div ref={refExperience}></div>
             <div>
                 <div style={{fontSize:"50px",fontWeight:"700", marginBottom:"50px", marginTop: "50px"}}>Experience</div>
-                <TimeLine timeLine={experience}/>
+                <TimeLine timeLine={experience} opacity={-400/9*proportion**2 + 280/9*proportion - 40/9}/>
             </div>
             <div ref={refProject}></div>
             <div>
                 <div style={{fontSize:"50px",fontWeight:"700", marginBottom:"50px", marginTop: "50px"}}>Project</div>
-                <TimeLine timeLine={project}/>
+                <TimeLine timeLine={project} opacity={-100/3*proportion**2 + 40*proportion - 32/3}/>
             </div>
             <div ref={refEducation}></div>
             <div>
                 <div style={{fontSize:"50px",fontWeight:"700", marginBottom:"50px", marginTop: "50px"}}>Education</div>
-                <TimeLine timeLine={education}/>
+                <TimeLine timeLine={education} opacity={-50*proportion**2 + 95*proportion - 44}/>
             </div>
             <div ref={refContact}></div>
         </div>
