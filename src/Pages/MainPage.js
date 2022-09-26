@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import Animation from "../Components/Animation";
 import ProfilePicture from '../Components/ProfilePicture';
 import TimeLine from '../Components/TimeLine';
-import styles from './MainPage.module.css';
+import './MainPage.css'
 
 function MainPage(props){
     const [proportion, setProportion] = useState(0);
@@ -11,7 +11,7 @@ function MainPage(props){
     const refEducation = useRef(null);
     const refContact = useRef(null);
     var experience = [["Aug 2021","Dec 2021","Hexagon",["Teach a group of 15 students to prepare for Cambridge A-level tests","Prepare homework and study material for student throughout the course"]],
-    ["May 2022","August 2022","Serversam PTE LTD",["Fullstack Developer Internship","Develop and build website using ASP.NET framework","Collaborate with the client to update the product accordingly"]]]
+    ["May 2022","August 2022","Serversam PTE LTD",["Fullstack Developer Internship","Develop and build website using ASP.NET framework","Collaborate with the client to update the product accordingly"]],["Aug 2022", "Present", "URECA Research Programme", ["DNN approaches to speech diarization", "Use BiEncoder Model to predict height and age"]]]
     var project=[["Jun 2021","May 2021", "Electrical Field", ["Used  SDL2 to stimulate the Electrical Field to use in teaching Physics"]],
     ["Oct 2021", "March 2022", "Trading Bot",["Work with Binance API to request candlestick data of cryptocurrencies for Machine Learning", "Build up JSON file to store data", "Build database for researching"]],
     ["May 2022","Jul 2022","Stock Chart Website",["Use ReactJS and Nodejs to build the frontend and backend of the website","Use MongoDB to store the data for website"]]]
@@ -58,19 +58,19 @@ function MainPage(props){
             <Animation/>
             <ProfilePicture/>
             <div ref={refExperience}></div>
-            <div>
+            <div style={{height:"800px"}}>
                 <div style={{fontSize:"50px",fontWeight:"700", marginBottom:"50px", marginTop: "50px"}}>Experience</div>
-                <TimeLine timeLine={experience} opacity={-400/9*proportion**2 + 280/9*proportion - 40/9}/>
+                <TimeLine timeLine={experience}/>
             </div>
             <div ref={refProject}></div>
-            <div>
+            <div style={{height:"800px"}}>
                 <div style={{fontSize:"50px",fontWeight:"700", marginBottom:"50px", marginTop: "50px"}}>Project</div>
-                <TimeLine timeLine={project} opacity={-100/3*proportion**2 + 40*proportion - 32/3}/>
+                <TimeLine timeLine={project}/>
             </div>
             <div ref={refEducation}></div>
-            <div>
+            <div style={{height:"800px"}}>
                 <div style={{fontSize:"50px",fontWeight:"700", marginBottom:"50px", marginTop: "50px"}}>Education</div>
-                <TimeLine timeLine={education} opacity={-50*proportion**2 + 95*proportion - 44}/>
+                <TimeLine timeLine={education}/>
             </div>
             <div ref={refContact}></div>
         </div>

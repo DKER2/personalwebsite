@@ -9,7 +9,7 @@ function TimeLine(props){
         timeLine = props.timeLine;
         return(
             <div style={{display:"flex", flexDirection:"row"}}>
-                <div style={{flex:"0.15", paddingTop: "19px", fontSize:"16px", fontWeight:"500"}}>
+                <div style={{flex:"0.2", paddingTop: "19px", fontSize:"16px", fontWeight:"500"}}>
                     {timeLine[0] + "-" + timeLine[1]} 
                 </div>
                 <div style={{flex:"0.075", borderLeft:"solid 5px #333"}}>
