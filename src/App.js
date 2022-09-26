@@ -1,23 +1,28 @@
 import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.css'
+import Header from './Layouts/Header/Header.js'
+import MainPage from './Pages/MainPage.js'
+import Footer from './Layouts/Footer/Footer.js'
+import { useState } from 'react';
 
 function App() {
+  const [scrollDestination, setScrollDestionation] = useState("null");
+  const [scroll, setScroll] = useState(true);
+  function scrollTo(name){
+    setScrollDestionation(name);
+    setScroll(!scroll);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+        <Header scrollTo={scrollTo}/>
+      </div>
+      <div style={{display:"flex", flexDirection:"column", width:"80%", margin:"auto", paddingTop:"50px", zIndex:"-20"}}>
+        <MainPage scrollDestination={scrollDestination} scroll={scroll}/>
+      </div>
+      <div style={{display:"flex", flexDirection:"column", margin:"auto", paddingTop:"50px", zIndex:"-20"}}>
+        <Footer/>
+      </div>
     </div>
   );
 }

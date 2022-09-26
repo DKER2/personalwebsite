@@ -1,0 +1,35 @@
+@keyframes fade-in {
+    0%{
+        opacity: 0.0;
+    }
+    5%{
+        opacity: 0.25;
+    }
+    10%{
+        opacity: 0.5;
+    }
+    30%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 0.5;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.animation{
+    height: 400px;
+    color: black;
+    font-size: 60px;
+    font-weight: 800;
+    opacity: 0.0;
+    animation: fade-in 5s ease-in;
+}
+.text{
+    padding-top: 150px;
+}

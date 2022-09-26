@@ -1,0 +1,28 @@
+.button{
+    border: 0px;
+    color: #333;
+    background: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px;
+    flex:0.25;
+    z-index: 99;
+    overflow: hidden;
+}
+.button:hover{
+    cursor:  pointer;
+    color: #999;
+    animation: buttonHover 0.25s ease-in-out;
+}
+@keyframes buttonHover {
+    from{
+        color:#333;
+    }
+    to{
+        color: #999;
+    }
+}
+.seperateLine{
+    border-right: solid 2px #555;
+    padding: auto 0px;
+}
