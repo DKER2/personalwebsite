@@ -18,6 +18,7 @@ function Header(props){
                 <NavigateItem name="Academic Learning" scrollTo={props.scrollTo}/>
                 <div className={styles.seperateLine}></div>
                 <NavigateItem name="Contact" scrollTo={props.scrollTo}/>
+                abc
             </div>
         </div>
     )
