@@ -12,10 +12,8 @@ function MainPage(props){
     var experience = [["Aug 2021","Dec 2021","Hexagon",["Teach a group of 15 students to prepare for Cambridge A-level tests","Prepare homework and study material for student throughout the course"]],
     ["May 2022","August 2022","Serversam PTE LTD",["Fullstack Developer Internship","Develop and build website using ASP.NET framework","Collaborate with the client to update the product accordingly"]],
     ["Aug 2022", "Jun 2023", "URECA Research Programme", ["DNN approaches to speech diarization", "Use BiEncoder Model to predict height and age"]],
-    ["Jan 2024", "May 2024", "Traveloka", ["Developed internal tool using Spring Boot to streamline data processing and automate the financial audit
-workflow.", "Reduced processing time for external files by 90% and reduced system operating costs by 90%.", "Designed and executed a new software architecture for data processing, enhancing system efficiency and
-scalability."]]],
-    ["May 2023","August 2023","Continental-NTU Corp Lab",["Deeplearning Research Internship","Do Literature review about multi-task learning","Develop and experiment with different model on Computer Vision tasks"]]].reverse()
+    ["May 2023","August 2023","Continental-NTU Corp Lab",["Deeplearning Research Internship","Do Literature review about multi-task learning","Develop and experiment with different model on Computer Vision tasks"]],
+    ["Jan 2024", "May 2024", "Traveloka", ["Developed internal tool using Spring Boot to streamline data processing and automate the financial audit workflow.", "Reduced processing time for external files by 90% and reduced system operating costs by 90%.", "Designed and executed a new software architecture for data processing, enhancing system efficiency and scalability."]]].reverse()
     var project=[["Jun 2021","May 2021", "Electrical Field", ["Used  SDL2 to stimulate the Electrical Field to use in teaching Physics"]],
     ["Oct 2021", "March 2022", "Trading Bot",["Work with Binance API to request candlestick data of cryptocurrencies for Machine Learning", "Build up JSON file to store data", "Build database for researching"]],
     ["May 2022","Jul 2022","Stock Chart Website",["Use ReactJS and Nodejs to build the frontend and backend of the website","Use MongoDB to store the data for website"]]].reverse()
