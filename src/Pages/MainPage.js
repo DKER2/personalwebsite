@@ -39,7 +39,7 @@ function MainPage(props){
     }
 
     useEffect(() => {scrollTo(props.scrollDestination)}, 
-    [props.scroll])
+    [props.scroll, props.scrollDestination])
 
     const handleScroll = () => {
         const position = window.pageYOffset;
