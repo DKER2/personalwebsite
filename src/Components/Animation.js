@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import styles from './Animation.module.css';
 function Animation(props){
     const StringsToRender = ["COMPUTER ENGINEER DEGREE", "WEB DEVELOPER", "NATURAL LANGUAGE PROCESSING"];
