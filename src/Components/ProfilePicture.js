@@ -6,7 +6,7 @@ function ProfilePicture(){
     return(
         <div className={styles.center}>
             <div className={styles.ProfilePictureOuter}>
-                <img className={styles.ProfilePicture} src={ProfilePicturePath}/> 
+                <img className={styles.ProfilePicture} alt="My ERROR FACE" src={ProfilePicturePath}/> 
             </div>
             <div style={{marginTop:"50px"}}>
                 <a href="https://github.com/DKER2" target="_blank"><Github style={{fontSize:"32px", color:"black"}}/></a>
