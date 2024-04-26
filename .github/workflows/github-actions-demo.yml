@@ -17,10 +17,10 @@ jobs:
           node-version: '20.x'
     - run: npm install
     - name: Pass github
-        run: |
-          git config --global user.name 'github-actions'
-          git config --global user.email 'github-actions@github.com'
-          git add .
-          git commit -m "Automate changes to files"
-          git push
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
+        git add .
+        git commit -m "Automate changes to files"
+        git push
     - run: npm run deploy
