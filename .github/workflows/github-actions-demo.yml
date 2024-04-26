@@ -11,7 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: Run Script
+    - name: CI
+      uses: actions/setup-node@v4
+      with:
+          node-version: '20.x'
+    - run: npm install
+
+    - name: CD
       uses: actions/setup-node@v4
       with:
           node-version: '20.x'
