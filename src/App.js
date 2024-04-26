@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import styles from './App.module.css'
 import Header from './Layouts/Header/Header.js'
 import MainPage from './Pages/MainPage.js'
 import Footer from './Layouts/Footer/Footer.js'
