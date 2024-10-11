@@ -1,0 +1,13 @@
+{
+    "name": "Dang Huy Phuong",
+    "age": 21,
+    "years_of_experience": 3,
+    "education": {
+      "degree": "Computer Engineering",
+      "university": "Nanyang Technological University",
+      "cgpa": 4.62
+    },
+    "email": "pdanghuy03@gmail.com",
+    "phone": "+65 8393 2597"
+  }
+  

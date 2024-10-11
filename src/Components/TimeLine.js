@@ -2,6 +2,7 @@ import React from 'react';
 import {Dot, ArrowRight} from 'react-bootstrap-icons';
 
 function TimeLine(props){
+    var isDisplayLogo = props.isDisplayLogo
     var timeLine = props.timeLine;
 
     function OneTimeLine(props){
@@ -18,15 +19,14 @@ function TimeLine(props){
             >
               {timeLineItem[0] + "-" + timeLineItem[1]}
             </div>
-            {/* <div style={{ flex: "0.1" }}>
+            {isDisplayLogo &&
+            <div style={{ flex: "0.1" }}>
               <img
-                src={
-                  require(`../Assets/CompanyPictures/${timeLineItem[4]}`).default
-                }
+                src={process.env.PUBLIC_URL + `/${timeLineItem[4]}`}
                 alt="CompanyLogo"
                 style={{ width: "100px", height: "100px" }}
-              ></img>
-            </div> */}
+              />
+            </div>}
             <div style={{ flex: "0.075", borderLeft: "solid 5px #333" }}>
               <Dot
                 style={{

@@ -28,7 +28,7 @@
     font-size: 60px;
     font-weight: 800;
     opacity: 0.0;
-    animation: fade-in 5s ease-in;
+    animation: fade-in 2s ease-in-out;
 }
 .text{
     padding-top: 150px;

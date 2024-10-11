@@ -18,6 +18,7 @@ function MainPage(props){
           "Teach a group of 15 students to prepare for Cambridge A-level tests",
           "Prepare homework and study material for student throughout the course",
         ],
+        "hexagon.jpg",
       ],
       [
         "May 2022",
@@ -28,6 +29,7 @@ function MainPage(props){
           "Develop and build website using ASP.NET framework",
           "Collaborate with the client to update the product accordingly",
         ],
+        "serversam.jpeg",
       ],
       [
         "Aug 2022",
@@ -37,6 +39,7 @@ function MainPage(props){
           "DNN approaches to speech diarization",
           "Use BiEncoder Model to predict height and age",
         ],
+        "ntu.png",
       ],
       [
         "May 2023",
@@ -47,7 +50,7 @@ function MainPage(props){
           "Do Literature review about multi-task learning",
           "Develop and experiment with different model on Computer Vision tasks",
         ],
-        "continental.png",
+        "continental.jpeg",
       ],
       [
         "Jan 2024",
@@ -119,7 +122,7 @@ function MainPage(props){
           >
             Experience
           </div>
-          <TimeLine timeLine={experience} />
+          <TimeLine timeLine={experience} isDisplayLogo={true} />
         </div>
         <div ref={refProject}></div>
         <div style={{ height: "cover" }}>
