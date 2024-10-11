@@ -29,7 +29,7 @@ function Header(props){
 
     const downloadResume = () => {
         saveAs(
-          process.env.PUBLIC_URL + "/files/resume.pdf",  // Path to your PDF file in the public folder
+          process.env.PUBLIC_URL + "/resume.pdf",  // Path to your PDF file in the public folder
           "Dang_Huy_Phuong_Resume.pdf"  // Name of the file when downloaded
         );
     };
