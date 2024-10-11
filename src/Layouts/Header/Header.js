@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from './Header.module.css';
+import { saveAs } from "file-saver";
 
 function Header(props){
     const [proportion, setProportion] = useState(0);
@@ -26,6 +27,13 @@ function Header(props){
         };
     }, []);
 
+    const downloadResume = () => {
+        saveAs(
+          process.env.PUBLIC_URL + "/files/resume.pdf",  // Path to your PDF file in the public folder
+          "Dang_Huy_Phuong_Resume.pdf"  // Name of the file when downloaded
+        );
+    };
+
     return(
         <div style={{position:"fixed", zIndex:"99", width:"100%"}}>
             <div style={{backgroundColor:"white", margin:"auto", width:"100%", height:"5px", display:"flex", flexDirection:"row", justifyContent:"space-around"}}>
@@ -44,6 +52,10 @@ function Header(props){
                 <NavigateItem name="Academic Learning" scrollTo={props.scrollTo}/>
                 <div className={styles.seperateLine}></div>
                 <NavigateItem name="Contact" scrollTo={props.scrollTo}/>
+                <div className={styles.seperateLine}></div>
+                <button onClick={downloadResume} className={styles.button}>
+                    Download Resume
+                </button>
             </div>
         </div>
     )

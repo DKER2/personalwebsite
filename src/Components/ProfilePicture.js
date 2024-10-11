@@ -1,12 +1,11 @@
 import React from 'react';
 import styles from './ProfilePicture.module.css';
-import ProfilePicturePath from '../Assets/Pictures/ProfilePicture.png';
 import {Github, Linkedin} from 'react-bootstrap-icons';
 function ProfilePicture(){
     return(
         <div className={styles.center}>
             <div className={styles.ProfilePictureOuter}>
-                <img className={styles.ProfilePicture} alt="My ERROR FACE" src={ProfilePicturePath}/> 
+                <img className={styles.ProfilePicture} alt="My ERROR FACE" src={process.env.PUBLIC_URL + `/ProfilePicture.png`}/> 
             </div>
             <div style={{marginTop:"50px"}}>
                 <a href="https://github.com/DKER2" target="_blank" rel="noopener noreferrer"><Github style={{fontSize:"32px", color:"black"}}/></a>
