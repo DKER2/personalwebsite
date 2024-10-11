@@ -7,7 +7,7 @@ function Footer(props){
         <div className={styles.footer}>
             <div style={{width:"80%", display:"flex", flexDirection:"row", margin:"auto", marginTop:"30px", fontSize:"18px"}}>
                 <div style={{flex:"0.66", display:"flex", flexDirection:"column-reverse"}}>
-                    <p>This Page was last updated at 26/09/2022 by DKER</p>
+                    <p>This Page was last updated at 11/10/2024 by DKER</p>
                 </div>
                 <div style={{flex:"0.33", padding:"10px", display:"flex", flexDirection:"column"}}>
                     <div>
