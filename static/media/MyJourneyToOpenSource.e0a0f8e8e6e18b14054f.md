@@ -21,10 +21,9 @@ Apache Beam caught my interest because of its:
 To begin, I needed to clone the repository and set up my development environment. I followed these steps:
 
 1. **Cloned the repository**:
-   ```bash
-   git clone https://github.com/apache/beam.git
-   cd beam
-
+  ```bash
+  git clone https://github.com/apache/beam.git
+  cd beam
   ```
 2. **Set up the virtual environment**:
   ```bash
