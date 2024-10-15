@@ -20,7 +20,7 @@ function PostItem({ post, onClick }) {
         <div className="post-item" onClick={onClick}>
             <h2 className="post-title">{formatFileName(post.fileName)}</h2>
             <div className="post-content">
-                <ReactMarkdown>{post.content}</ReactMarkdown>
+                <ReactMarkdown>{post.content.substring(0, 200) + "..."}</ReactMarkdown>
             </div>
       </div>
     )

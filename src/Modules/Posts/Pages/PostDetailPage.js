@@ -1,16 +1,16 @@
 import React from 'react';
+import PostDetail from '../Components/PostDetail';
 import PosterHeader from '../../../Layouts/Components/Header/PosterHeader';
-import PostsBoard from '../Components/PostsBoard';
 import Footer from '../../../Layouts/Components/Footer/Footer';
 
-const PostsPage = () => {
+const PostDetailPage = () => {
     return (
         <div>
             <div>
                 <PosterHeader/>
             </div>
             <div style={{display:"flex", flexDirection:"column", width:"80%", margin:"auto", paddingTop:"50px", zIndex:"-20"}}>
-                <PostsBoard/>
+                <PostDetail/>
             </div>
             <div style={{display:"flex", flexDirection:"column", margin:"auto", paddingTop:"50px", zIndex:"-20"}}>
                 <Footer/>
@@ -19,4 +19,4 @@ const PostsPage = () => {
     );
 };
 
-export default PostsPage;
+export default PostDetailPage;
