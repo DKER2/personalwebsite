@@ -1,10 +1,10 @@
 import React, { useRef, useEffect } from "react";
-import Animation from "../Components/Animation";
-import ProfilePicture from '../Components/ProfilePicture';
-import TimeLine from '../Components/TimeLine';
-import './MainPage.css'
+import Animation from "./Animation";
+import ProfilePicture from './ProfilePicture';
+import TimeLine from './TimeLine';
+import './Profile.css'
 
-function MainPage(props){
+function Profile(props){
     const refExperience = useRef(null);
     const refProject = useRef(null);
     const refEducation = useRef(null);
@@ -157,4 +157,4 @@ function MainPage(props){
     );
 }
 
-export default MainPage;
+export default Profile;

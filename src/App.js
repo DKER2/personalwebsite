@@ -1,27 +1,17 @@
-import Header from './Layouts/Header/Header.js'
-import MainPage from './Pages/MainPage.js'
-import Footer from './Layouts/Footer/Footer.js'
-import { useState } from 'react';
-
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './Modules/Homepage/Pages/HomePage';
+import PostDetail from './Modules/Posts/Components/PostDetail';
+import PostsPage from './Modules/Posts/Pages/PostsPage';
 function App() {
-  const [scrollDestination, setScrollDestionation] = useState("null");
-  const [scroll, setScroll] = useState(true);
-  function scrollTo(name){
-    setScrollDestionation(name);
-    setScroll(!scroll);
-  }
   return (
-    <div>
-      <div>
-        <Header scrollTo={scrollTo}/>
-      </div>
-      <div style={{display:"flex", flexDirection:"column", width:"80%", margin:"auto", paddingTop:"50px", zIndex:"-20"}}>
-        <MainPage scrollDestination={scrollDestination} scroll={scroll}/>
-      </div>
-      <div style={{display:"flex", flexDirection:"column", margin:"auto", paddingTop:"50px", zIndex:"-20"}}>
-        <Footer/>
-      </div>
-    </div>
+    <Router basename="/personalwebsite">
+      <Routes>
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/posts" element={<PostsPage />} />
+        <Route path="/posts/:postName" element={<PostDetail />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,0 +1,40 @@
+.post-item {
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    margin: 20px 0; /* Spacing between posts */
+    padding: 20px; /* Padding inside the container */
+    transition: transform 0.2s ease; /* Smooth hover effect */
+  }
+  
+  .post-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+  }
+  
+  .post-title {
+    font-size: 1.5em;
+    color: #333; /* Dark text for the title */
+    margin-bottom: 10px; /* Space below the title */
+    font-weight: bold;
+    text-transform: capitalize; /* Capitalize file names */
+  }
+  
+  .post-content {
+    font-size: 1em;
+    color: #555; /* Softer text for readability */
+    line-height: 1.6; /* Space between lines for easier reading */
+  }
+  
+  code {
+    background-color: #eee; /* Light background for code blocks */
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  pre {
+    background-color: #f1f1f1; /* Slightly darker background for code blocks */
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto; /* Horizontal scroll for long code lines */
+  }
+  

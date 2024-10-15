@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
-import PhuongAttributes from "../Assets/PhuongAttributes.json";
+import PhuongAttributes from "../../../Assets/PhuongAttributes.json";
 import styles from './Animation.module.css';
 function Animation(props){
     const StringsToRender = ["COMPUTER ENGINEER", "WEB DEVELOPER", "BACKEND DEVELOPER", "OPENSOURCE"];

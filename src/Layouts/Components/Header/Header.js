@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import styles from './Header.module.css';
 import { saveAs } from "file-saver";
+import {useNavigate } from 'react-router-dom';
 
 function Header(props){
     const [proportion, setProportion] = useState(0);
+    const navigate = useNavigate();
 
     function NavigateItem(props){
         return(
@@ -34,6 +36,10 @@ function Header(props){
         );
     };
 
+    const navigateToPoster = () => {
+        navigate(`/posts`); // Navigates to the dynamic route `/:id`
+    };
+
     return(
         <div style={{position:"fixed", zIndex:"99", width:"100%"}}>
             <div style={{backgroundColor:"white", margin:"auto", width:"100%", height:"5px", display:"flex", flexDirection:"row", justifyContent:"space-around"}}>
@@ -55,6 +61,10 @@ function Header(props){
                 <div className={styles.seperateLine}></div>
                 <button onClick={downloadResume} className={styles.button}>
                     Download Resume
+                </button>
+                <div className={styles.seperateLine}></div>
+                <button onClick={navigateToPoster} className={styles.button}>
+                    Poster
                 </button>
             </div>
         </div>
