@@ -9,6 +9,7 @@
   
   .post-item:hover {
     transform: translateY(-5px); /* Lift effect on hover */
+    cursor: pointer; /* Show pointer cursor on hover */
   }
   
   .post-title {
