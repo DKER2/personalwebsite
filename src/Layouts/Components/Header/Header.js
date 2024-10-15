@@ -9,7 +9,7 @@ function Header(props){
 
     function NavigateItem(props){
         return(
-            <button className={styles.button} onClick={() => {props.scrollTo(props.name)}}> 
+            <button className={styles.button} onClick={() => {navigateToHomePage(); props.scrollTo(props.name);}}> 
                 <div>{props.name}</div>
             </button>
         )
@@ -40,6 +40,10 @@ function Header(props){
         navigate(`/posts`); // Navigates to the dynamic route `/:id`
     };
 
+    const navigateToHomePage = () => {
+        navigate(`/`); // Navigates to the dynamic route `/:id`
+    };
+
     return(
         <div style={{position:"fixed", zIndex:"99", width:"100%"}}>
             <div style={{backgroundColor:"white", margin:"auto", width:"100%", height:"5px", display:"flex", flexDirection:"row", justifyContent:"space-around"}}>
@@ -64,7 +68,7 @@ function Header(props){
                 </button>
                 <div className={styles.seperateLine}></div>
                 <button onClick={navigateToPoster} className={styles.button}>
-                    Poster
+                    Posts
                 </button>
             </div>
         </div>

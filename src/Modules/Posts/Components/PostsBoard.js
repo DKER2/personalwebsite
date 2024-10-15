@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import PostItem from './PostItem';
 import { useNavigate } from 'react-router-dom';
 
-const importAllFiles = async (r) => {
+export const importAllFiles = async (r) => {
     // Map each file and fetch its content as text
     const files = r.keys().map((fileName) => {
       return fetch(r(fileName))

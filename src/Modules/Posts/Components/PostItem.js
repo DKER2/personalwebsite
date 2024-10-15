@@ -2,7 +2,7 @@ import React from "react";
 import ReactMarkdown from "react-markdown";
 import './PostItem.css';
 
-function formatFileName(filePath) {
+export function formatFileName(filePath) {
     // Step 1: Remove "./" or any path elements
     let fileName = filePath.replace(/^.*[\\/]/, ''); // This will remove any leading directory path
   
