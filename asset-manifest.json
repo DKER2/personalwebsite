@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/personalwebsite/static/css/main.1a1ee7ac.css",
-    "main.js": "/personalwebsite/static/js/main.65de8ae6.js",
+    "main.js": "/personalwebsite/static/js/main.9c6d2ee8.js",
     "static/js/787.6568e1bc.chunk.js": "/personalwebsite/static/js/787.6568e1bc.chunk.js",
     "static/media/GoogleSummerOfCodeProposal.md": "/personalwebsite/static/media/GoogleSummerOfCodeProposal.5e5b6bffc414ddef9062.md",
-    "static/media/MyJourneyToOpenSource.md": "/personalwebsite/static/media/MyJourneyToOpenSource.e0a0f8e8e6e18b14054f.md",
+    "static/media/MyJourneyToOpenSource.md": "/personalwebsite/static/media/MyJourneyToOpenSource.52991ee356915173b423.md",
     "index.html": "/personalwebsite/index.html",
     "main.1a1ee7ac.css.map": "/personalwebsite/static/css/main.1a1ee7ac.css.map",
-    "main.65de8ae6.js.map": "/personalwebsite/static/js/main.65de8ae6.js.map",
+    "main.9c6d2ee8.js.map": "/personalwebsite/static/js/main.9c6d2ee8.js.map",
     "787.6568e1bc.chunk.js.map": "/personalwebsite/static/js/787.6568e1bc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1a1ee7ac.css",
-    "static/js/main.65de8ae6.js"
+    "static/js/main.9c6d2ee8.js"
   ]
 }
