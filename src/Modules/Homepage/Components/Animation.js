@@ -21,7 +21,7 @@ function Animation(props){
                     {StringsToRender[stringIndex]}
                 </div>
             </div>
-            <SyntaxHighlighter language="json" style={vscDarkPlus} customStyle={{height: "fit-content", margin: "50px", marginRight: "0px"}}>
+            <SyntaxHighlighter language="json" style={vscDarkPlus} customStyle={{height: "fit-content", margin: "50px", marginRight: "0px",  backgroundColor: "#1e1e1e", color: "#fff",}} codeTagProps={{style: { backgroundColor: "transparent" },}}>
                 {JSON.stringify(PhuongAttributes, null, 2)}
             </SyntaxHighlighter>
         </div>
