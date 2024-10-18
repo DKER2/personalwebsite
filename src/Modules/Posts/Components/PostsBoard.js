@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import PostItem from './PostItem';
 import { useNavigate } from 'react-router-dom';
 
@@ -22,7 +22,7 @@ const PostsBoard = () => {
   const [posts, setPosts] = useState([]);
   const navigate = useNavigate();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const loadPosts = async () => {
         const allPosts = await importAllFiles(require.context('../Assets/Posts/', true, /\.md$/));
         setPosts(allPosts); // Set the fetched posts content to state
