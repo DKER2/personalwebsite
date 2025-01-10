@@ -21,11 +21,13 @@ export const importAllFiles = async (r) => {
 const PostsBoard = () => {
   const [posts, setPosts] = useState([]);
   const navigate = useNavigate();
+  const [loading, setLoading] = useState(true); 
 
   useLayoutEffect(() => {
     const loadPosts = async () => {
         const allPosts = await importAllFiles(require.context('../Assets/Posts/', true, /\.md$/));
         setPosts(allPosts); // Set the fetched posts content to state
+        setLoading(false);
     };
 
     loadPosts();
@@ -38,11 +40,15 @@ const PostsBoard = () => {
 
   return (
     <div>
-      <ul>
-        {posts.map((post) => {
-            return (<PostItem key={post.fileName} post={post} onClick={() => navigateToPost(post)} />);
-        })}
-      </ul>
+      {loading ? (
+        <p>Loading posts...</p> // Show a loading message while posts are being fetched
+      ) : (
+        <ul>
+          {posts.map((post) => (
+            <PostItem key={post.fileName} post={post} onClick={() => navigateToPost(post)} />
+          ))}
+        </ul>
+      )}
     </div>
   );
 };

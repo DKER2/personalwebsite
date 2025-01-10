@@ -57,11 +57,22 @@ function Profile(props){
         "May 2024",
         "Traveloka",
         [
-          "Developed internal tool using Spring Boot to streamline data processing and automate the financial audit workflow.",
-          "Reduced processing time for external files by 90% and reduced system operating costs by 90%.",
-          "Designed and executed a new software architecture for data processing, enhancing system efficiency and scalability.",
+          "Engineered a Spring Boot-based internal tool for over 200 users across 20 teams that automated financial audit workflows, enhancing data processing efficiency.",
+          "Reduced 95% in processing and 90% in cost for data conversion process by proposing and developing a newly designed system architecture.",
+          "Architected a system for all 40 backend teams at Traveloka to monitor and alert usage threshold across AWS services, eliminating the possibility of throttling accidents and ensuring the smooth operation of applications.",
         ],
         "traveloka.png",
+      ],
+      [
+        "Nov 2024",
+        "Now",
+        "Privyr",
+        [
+          "Developed a scalable Django backend and dynamic Vue.js frontend webapp for a CRM system serving thousands of organizations, driving a 300% improvement in lead-to-sale conversion rates.",
+          "Designed and implemented advanced analytics systems, empowering data-driven insights, enabling seamless team progress tracking, and boosting operational efficiency.",
+          "Boosted user accessiblity and CRM usage by 20% through innovative seamless file import/export integrations, streamlining data entry.",
+        ],
+        "privyr.png",
       ],
     ].reverse();
     var project=[["Jun 2021","May 2021", "Electrical Field", ["Used  SDL2 to stimulate the Electrical Field to use in teaching Physics"]],
