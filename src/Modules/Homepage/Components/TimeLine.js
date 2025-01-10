@@ -24,7 +24,7 @@ function TimeLine(props){
               <img
                 src={process.env.PUBLIC_URL + `/${timeLineItem[4]}`}
                 alt="CompanyLogo"
-                style={{ width: "100px", height: "100px" }}
+                style={{ width: "50px", height: "50px" }}
               />
             </div>}
             <div style={{ flex: "0.075", borderLeft: "solid 5px #333" }}>
