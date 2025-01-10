@@ -28,4 +28,4 @@ As a new joiner, it is very hard to know what bring the most impact to your team
 
 Not too aggressive in ownership of your code, but you still need to take ownership of your code, I mean you need to take responsiblity of the quality of the code you write, ensure it is easy for other developer to understand, maintainable, scable. Because in startup, it is the start of thing, what you built is the core of a system, your code will make a lot impact if company grow in size, a lot of new generation of developer will look at your code. 
 
-Cheers
+Cheers, end of my fulltime intern at Privyr
