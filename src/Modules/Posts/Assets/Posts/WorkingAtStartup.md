@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Winter 2024 in Singapore, it is called winter but actually it is not winter. I damn hot sia. But still a fun and warm winter as I got friends and talent collages beside me. I was in a serial A startup [Privyr](https://www.privyr.com/), it is such a nice place with amazing people. I never saw a company with such-western culture in Singapore. Bravo my mentors Pranav Gore, Putu Yoga.
+Winter 2024 in Singapore, it is called winter but actually it is not winter. It is damn hot sia. But still a fun and warm winter as I got friends and talent collages beside me. I was in a serial A startup [Privyr](https://www.privyr.com/), it is such a nice place with amazing people. I never saw a company with such-western culture in Singapore. Bravo my mentors Pranav Gore, Putu Yoga.
 
 ## Startup culture
 
@@ -13,11 +13,11 @@ Startup is where idea come and go at fast pace. The idea can change really fast,
 
 ### Being proactive
 
-Always be proactive in clearing ambious in requirement. What is implemented can be totally different from the initial requirements. So I should bne clear what is the goal, before start to write the first line of code, it could save you a lot of time 
+Always be proactive in clearing ambious in requirement. What is implemented can be totally different from the initial requirements. So you should be clear what is the goal, before start to write the first line of code, it could save you a lot of time 
 
 ### Balance work-life
 
-Working in a startup, where a release cycle of a big feature can be one-two weeks to meet the deadline of user, you should prepare for extensive week. So please please prepare for it, and give you some pace to balance life. That will not about your life, but also your quality of work. Being in a good mood, 8-hours-sleep will allow to write the best line of code.  
+Working in a startup, where a release cycle of a big feature can be one-two weeks to meet the deadline of user, you should prepare for extensive week. So please please prepare for it, and give you some pace to balance life. Not only about your life, but also your quality of work. Being in a good mood, 8-hours-sleep will allow to write the best line of code.  
 
 ### Priority
 
