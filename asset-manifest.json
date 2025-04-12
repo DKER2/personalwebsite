@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/personalwebsite/static/css/main.1a1ee7ac.css",
-    "main.js": "/personalwebsite/static/js/main.a41dec9d.js",
+    "main.js": "/personalwebsite/static/js/main.b997e5e8.js",
     "static/js/787.6568e1bc.chunk.js": "/personalwebsite/static/js/787.6568e1bc.chunk.js",
     "static/media/GoogleSummerOfCodeProposal.md": "/personalwebsite/static/media/GoogleSummerOfCodeProposal.5e5b6bffc414ddef9062.md",
     "static/media/MyJourneyToOpenSource.md": "/personalwebsite/static/media/MyJourneyToOpenSource.52991ee356915173b423.md",
     "static/media/WorkingAtStartup.md": "/personalwebsite/static/media/WorkingAtStartup.b41459afca8bb8a1d65c.md",
     "index.html": "/personalwebsite/index.html",
     "main.1a1ee7ac.css.map": "/personalwebsite/static/css/main.1a1ee7ac.css.map",
-    "main.a41dec9d.js.map": "/personalwebsite/static/js/main.a41dec9d.js.map",
+    "main.b997e5e8.js.map": "/personalwebsite/static/js/main.b997e5e8.js.map",
     "787.6568e1bc.chunk.js.map": "/personalwebsite/static/js/787.6568e1bc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1a1ee7ac.css",
-    "static/js/main.a41dec9d.js"
+    "static/js/main.b997e5e8.js"
   ]
 }
