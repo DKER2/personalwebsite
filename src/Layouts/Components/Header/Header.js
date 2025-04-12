@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import styles from "./Header.module.css";
 import { saveAs } from "file-saver";
 import { useNavigate } from "react-router-dom";
-import { Icon123 } from "react-bootstrap-icons";
 
 function Header(props) {
   const [proportion, setProportion] = useState(0);
