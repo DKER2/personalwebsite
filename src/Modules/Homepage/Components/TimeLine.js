@@ -6,9 +6,9 @@ function TimeLine(props){
     var timeLine = props.timeLine;
 
     function OneTimeLine(props){
-        var timeLineItem = props.timeLineItem;
+        var [startDate, endDate, title, details, imagePath] = props.timeLineItem;
         return (
-          <div style={{ display: "flex", flexDirection: "row" }}>
+          <div className="flex flex-col lg:flex-row">
             <div
               style={{
                 flex: "0.2",
@@ -17,17 +17,9 @@ function TimeLine(props){
                 fontWeight: "500",
               }}
             >
-              {timeLineItem[0] + "-" + timeLineItem[1]}
+              {startDate + "-" + endDate}
             </div>
-            {isDisplayLogo &&
-            <div style={{ flex: "0.1" }}>
-              <img
-                src={process.env.PUBLIC_URL + `/${timeLineItem[4]}`}
-                alt="CompanyLogo"
-                style={{ width: "50px", height: "50px" }}
-              />
-            </div>}
-            <div style={{ flex: "0.075", borderLeft: "solid 5px #333" }}>
+            <div className="hidden lg:block" style={{ flex: "0.075", borderLeft: "solid 5px #333" }}>
               <Dot
                 style={{
                   fontSize: "60px",
@@ -44,11 +36,19 @@ function TimeLine(props){
                 top: "-9px",
               }}
             >
-              <div style={{ fontSize: "30px", fontWeight: "500" }}>
-                {timeLineItem[2]}
+              <div className="flex content-center items-center" style={{ fontSize: "30px", fontWeight: "500" }}>
+                {title}
+                {isDisplayLogo &&
+                <div className='m-3'>
+                  <img
+                    src={process.env.PUBLIC_URL + `/${imagePath}`}
+                    alt="CompanyLogo"
+                    style={{ width: "50px", height: "50px" }}
+                  />
+                </div>}
               </div>
               <div>
-                {timeLineItem[3].map((timeLineItem, index) => {
+                {details.map((timeLineItem, index) => {
                   return (
                     <div
                       key={index}

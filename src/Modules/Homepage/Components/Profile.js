@@ -44,7 +44,7 @@ function Profile(props){
       [
         "May 2023",
         "August 2023",
-        "Continental-NTU Corp Lab",
+        "Continental",
         [
           "Deeplearning Research Internship",
           "Do Literature review about multi-task learning",
@@ -119,7 +119,7 @@ function Profile(props){
 
     return (
       <div>
-        <Animation />
+        <Animation/>
         <ProfilePicture />
         <div ref={refExperience}></div>
         <div style={{ height: "cover" }}>
