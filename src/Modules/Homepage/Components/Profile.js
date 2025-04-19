@@ -65,7 +65,7 @@ function Profile(props){
       ],
       [
         "Nov 2024",
-        "Now",
+        "April 2025",
         "Privyr",
         [
           "Developed a scalable Django backend and dynamic Vue.js frontend webapp for a CRM system serving thousands of organizations, driving a 300% improvement in lead-to-sale conversion rates.",
@@ -79,7 +79,7 @@ function Profile(props){
     ["Oct 2021", "March 2022", "Trading Bot",["Work with Binance API to request candlestick data of cryptocurrencies for Machine Learning", "Build up JSON file to store data", "Build database for researching"]],
     ["May 2022","Jul 2022","Stock Chart Website",["Use ReactJS and Nodejs to build the frontend and backend of the website","Use MongoDB to store the data for website"]]].reverse()
     var education=[["Aug 2018","May 2021","High School for Gifted Student",["Specialize in Physics", "Overall Score: 9.5/10"]],
-    ["Aug 2021","May 2025","Nanyang Technological University",["Cumulative GPA: 4.56/5.0","Bachelor of Computer Engineering"]]].reverse()
+    ["Aug 2021","May 2025","Nanyang Technological University",["Cumulative GPA: 4.62/5.0","Bachelor of Computer Engineering"]]].reverse()
 
     const scrollTo = (scrollDestination) => {
         switch(scrollDestination){
