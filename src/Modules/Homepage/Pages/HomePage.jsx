@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from '../../../Layouts/Components/Header/Header.js'
-import Footer from '../../../Layouts/Components/Footer/Footer.js'
+import Header from '../../../Layouts/Components/Header/Header.jsx'
+import Footer from '../../../Layouts/Components/Footer/Footer.jsx'
 import { useState } from 'react';
-import Profile from '../Components/Profile.js';
+import Profile from '../Components/Profile.jsx';
 function HomePage(children) {
     const [scrollDestination, setScrollDestionation] = useState("null");
     const [scroll, setScroll] = useState(true);
@@ -15,10 +15,10 @@ function HomePage(children) {
             <div>
                 <Header scrollTo={scrollTo}/>
             </div>
-            <div style={{display:"flex", flexDirection:"column", width:"80%", margin:"auto", paddingTop:"50px", zIndex:"-20"}}>
+            <div className="flex flex-col w-4/5 mx-auto pt-[50px] -z-20">
                 <Profile scrollDestination={scrollDestination} scroll={scroll}/>
             </div>
-            <div style={{display:"flex", flexDirection:"column", margin:"auto", paddingTop:"50px", zIndex:"-20"}}>
+            <div className="flex flex-col mx-auto pt-[50px] -z-20">
                 <Footer/>   
             </div>
         </div>
