@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useState } from 'react';
-import PostItem from './PostItem';
+import PostItem from './PostItem.jsx';
 import { useNavigate } from 'react-router-dom';
 
 export const importAllFiles = async (r) => {

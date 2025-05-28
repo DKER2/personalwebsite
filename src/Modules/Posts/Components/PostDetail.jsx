@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
-import { formatFileName } from './PostItem';
-import { importAllFiles } from './PostsBoard';
+import { formatFileName } from './PostItem.jsx';
+import { importAllFiles } from './PostsBoard.jsx';
 import './PostDetail.css';
 
 function PostDetail() {

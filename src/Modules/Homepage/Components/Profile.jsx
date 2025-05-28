@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
-import Animation from "./Animation";
-import ProfilePicture from './ProfilePicture';
-import TimeLine from './TimeLine';
+import Animation from "./Animation.jsx";
+import ProfilePicture from './ProfilePicture.jsx';
+import TimeLine from './TimeLine.jsx';
 import './Profile.css'
 
 function Profile(props){
@@ -122,42 +122,27 @@ function Profile(props){
         <Animation/>
         <ProfilePicture />
         <div ref={refExperience}></div>
-        <div style={{ height: "cover" }}>
+        <div className="min-h-screen">
           <div
-            style={{
-              fontSize: "50px",
-              fontWeight: "700",
-              marginBottom: "50px",
-              marginTop: "50px",
-            }}
+            className="text-[50px] font-bold mb-[50px] mt-[50px]"
           >
             Experience
           </div>
           <TimeLine timeLine={experience} isDisplayLogo={true} />
         </div>
         <div ref={refProject}></div>
-        <div style={{ height: "cover" }}>
+        <div className="min-h-screen">
           <div
-            style={{
-              fontSize: "50px",
-              fontWeight: "700",
-              marginBottom: "50px",
-              marginTop: "50px",
-            }}
+            className="text-[50px] font-bold mb-[50px] mt-[50px]"
           >
             Project
           </div>
           <TimeLine timeLine={project} />
         </div>
         <div ref={refEducation}></div>
-        <div style={{ height: "cover" }}>
+        <div className="min-h-screen">
           <div
-            style={{
-              fontSize: "50px",
-              fontWeight: "700",
-              marginBottom: "50px",
-              marginTop: "50px",
-            }}
+            className="text-[50px] font-bold mb-[50px] mt-[50px]"
           >
             Education
           </div>

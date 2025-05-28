@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./Header.module.css";
 import { saveAs } from "file-saver";
 import { useNavigate } from "react-router-dom";
+import NavigateItem from "./NavigateItem.jsx"; // Import the new component
 
 function Header(props) {
   const [proportion, setProportion] = useState(0);
@@ -12,19 +13,7 @@ function Header(props) {
   };
   const navigate = useNavigate();
 
-  function NavigateItem(props) {
-    return (
-      <button
-        className={styles.button}
-        onClick={() => {
-          navigateToHomePage();
-          props.scrollTo(props.name);
-        }}
-      >
-        <div>{props.name}</div>
-      </button>
-    );
-  }
+  // NavigateItem function is now removed from here
 
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -58,23 +47,17 @@ function Header(props) {
   };
 
   return (
-    <div style={{ position: "fixed", zIndex: "99", width: "100%" }}>
+    <div className="fixed z-[99] w-full">
       <div
-        style={{
-          backgroundColor: "white",
-          margin: "auto",
-          width: "100%",
-          height: "5px",
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-around",
-        }}
+        className="bg-white mx-auto w-full h-[5px] flex flex-row justify-around"
       >
         <div
-          style={{ flex: proportion, background: "black", width: "100%" }}
+          className="bg-black w-full"
+          style={{ flex: proportion }}
         ></div>
         <div
-          style={{ flex: 1 - proportion, background: "white", width: "100%" }}
+          className="bg-white w-full"
+          style={{ flex: 1 - proportion }}
         ></div>
       </div>
       <button
@@ -94,27 +77,20 @@ function Header(props) {
         className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto`}
       >
         <ul
-          className="flex flex-col lg:flex-row"
-          style={{
-            backgroundColor: "white",
-            margin: "auto",
-            width: "100%",
-            justifyContent: "space-around",
-            borderBottom: "solid 3px #555",
-          }}
+          className="flex flex-col lg:flex-row bg-white mx-auto w-full justify-around border-b-[3px] border-[#555]"
         >
-          <NavigateItem name="Experience" scrollTo={props.scrollTo} />
-          <div className={styles.seperateLine}></div>
-          <NavigateItem name="Project" scrollTo={props.scrollTo} />
-          <div className={styles.seperateLine}></div>
-          <NavigateItem name="Academic Learning" scrollTo={props.scrollTo} />
-          <div className={styles.seperateLine}></div>
-          <NavigateItem name="Contact" scrollTo={props.scrollTo} />
-          <div className={styles.seperateLine}></div>
+          <NavigateItem name="Experience" scrollTo={props.scrollTo} navigateToHomePage={navigateToHomePage} />
+          <div className="border-r-[2px] border-[#555]"></div>
+          <NavigateItem name="Project" scrollTo={props.scrollTo} navigateToHomePage={navigateToHomePage} />
+          <div className="border-r-[2px] border-[#555]"></div>
+          <NavigateItem name="Academic Learning" scrollTo={props.scrollTo} navigateToHomePage={navigateToHomePage} />
+          <div className="border-r-[2px] border-[#555]"></div>
+          <NavigateItem name="Contact" scrollTo={props.scrollTo} navigateToHomePage={navigateToHomePage} />
+          <div className="border-r-[2px] border-[#555]"></div>
           <button onClick={downloadResume} className={styles.button}>
             Download Resume
           </button>
-          <div className={styles.seperateLine}></div>
+          <div className="border-r-[2px] border-[#555]"></div>
           <button onClick={navigateToPoster} className={styles.button}>
             Posts
           </button>
