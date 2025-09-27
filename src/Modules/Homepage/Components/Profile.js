@@ -74,10 +74,22 @@ function Profile(props){
         ],
         "privyr.png",
       ],
+      [
+        "May 2025",
+        "Present",
+        "Nanolumi",
+        [
+          "Drove 90% bug reduction and enhanced security by implementing comprehensive testing, while refactoring an Django outsourced codebase to improve maintainability, scalability, and performance.",
+          "Led full-stack development of a job management system (Django/React), delivering transparent activity tracking for clients while enabling internal teams to optimize costs and boost operational efficiency.",
+          "Reduced 30% in cloud costs by proposing and implementing a new data analytics architecture and eliminating redundant resources.",
+        ],
+        "nanolumi.png",
+      ],
     ].reverse();
     var project=[["Jun 2021","May 2021", "Electrical Field", ["Used  SDL2 to stimulate the Electrical Field to use in teaching Physics"]],
     ["Oct 2021", "March 2022", "Trading Bot",["Work with Binance API to request candlestick data of cryptocurrencies for Machine Learning", "Build up JSON file to store data", "Build database for researching"]],
-    ["May 2022","Jul 2022","Stock Chart Website",["Use ReactJS and Nodejs to build the frontend and backend of the website","Use MongoDB to store the data for website"]]].reverse()
+    ["May 2022","Jul 2022","Stock Chart Website",["Use ReactJS and Nodejs to build the frontend and backend of the website","Use MongoDB to store the data for website"]],
+    ["May 2024","Present","Apache Beam",["Open-source contributor"]]].reverse()
     var education=[["Aug 2018","May 2021","High School for Gifted Student",["Specialize in Physics", "Overall Score: 9.5/10"]],
     ["Aug 2021","May 2025","Nanyang Technological University",["Cumulative GPA: 4.62/5.0","Bachelor of Computer Engineering"]]].reverse()
 

@@ -17,7 +17,7 @@ function Footer(props){
                         <a style={{display:"flex", flexDirection:"row-reverse", textDecoration:"none", color:"white"}} href="https://github.com/DKER2"><CodeSlash style={{fontSize:"32px", marginLeft:"15px"}}/><div>DKER2</div></a>
                     </div>
                     <div style={{display:"flex", flexDirection:"row-reverse", marginTop:"7px"}}>
-                        <a style={{display:"flex", flexDirection:"row-reverse", textDecoration:"none", color:"white"}} href="https://www.linkedin.com/in/dang-huy-phuong-3424bb220/"><Linkedin style={{fontSize:"32px", marginLeft:"15px"}}/><div>Dang Huy Phuong</div></a>
+                        <a style={{display:"flex", flexDirection:"row-reverse", textDecoration:"none", color:"white"}} href="https://www.linkedin.com/in/bryan-dang-3424bb220/"><Linkedin style={{fontSize:"32px", marginLeft:"15px"}}/><div>Dang Huy Phuong</div></a>
                     </div>
                 </div>
             </div>
