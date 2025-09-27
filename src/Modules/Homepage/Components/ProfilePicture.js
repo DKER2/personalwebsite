@@ -9,7 +9,7 @@ function ProfilePicture(){
             </div>
             <div className="flex flex-row" style={{marginTop:"50px"}}>
                 <a href="https://github.com/DKER2" target="_blank" rel="noopener noreferrer"><Github style={{fontSize:"32px", color:"black"}}/></a>
-                <a href="https://www.linkedin.com/in/dang-huy-phuong-3424bb220/" target="_blank" style={{marginLeft:"20px"}} rel="noopener noreferrer"><Linkedin style={{fontSize:"32px", color:"black"}}/></a>
+                <a href="https://www.linkedin.com/in/bryan-dang-3424bb220/" target="_blank" style={{marginLeft:"20px"}} rel="noopener noreferrer"><Linkedin style={{fontSize:"32px", color:"black"}}/></a>
             </div>
         </div>
     )
