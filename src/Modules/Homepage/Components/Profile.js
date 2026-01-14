@@ -83,7 +83,7 @@ function Profile(props){
           "Led full-stack development of a job management system (Django/React), delivering transparent activity tracking for clients while enabling internal teams to optimize costs and boost operational efficiency.",
           "Reduced 30% in cloud costs by proposing and implementing a new data analytics architecture and eliminating redundant resources.",
         ],
-        "nanolumi.png",
+        "",
       ],
     ].reverse();
     var project=[["Jun 2021","May 2021", "Electrical Field", ["Used  SDL2 to stimulate the Electrical Field to use in teaching Physics"]],
