@@ -43,7 +43,7 @@ function TimeLine(props){
                   <img
                     src={process.env.PUBLIC_URL + `/${imagePath}`}
                     alt="CompanyLogo"
-                    style={{ width: "50px", height: "50px" }}
+                    style={{ height: "50px" }}
                   />
                 </div>}
               </div>
