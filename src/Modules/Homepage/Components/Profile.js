@@ -85,6 +85,18 @@ function Profile(props){
         ],
         "",
       ],
+      [
+        "March 2025",
+        "Present",
+        "Hypotenuse AI",
+        [
+          "Developed full-stack features across React/TypeScript frontend and Python/FastAPI backend for an AI-powered ecommerce platform serving 1M+ users",
+          "Built and optimized scalable data pipelines handling millions of product records for Fortune 500 brands",
+          "Architected and deployed AI content generation workflows, improving processing speed and reliability",
+          "Contributed to infrastructure scaling on AWS to support high-concurrency asynchronous job processing",
+        ],
+        "hypotenuse.png",
+      ],
     ].reverse();
     var project=[["Jun 2021","May 2021", "Electrical Field", ["Used  SDL2 to stimulate the Electrical Field to use in teaching Physics"]],
     ["Oct 2021", "March 2022", "Trading Bot",["Work with Binance API to request candlestick data of cryptocurrencies for Machine Learning", "Build up JSON file to store data", "Build database for researching"]],
@@ -134,7 +146,7 @@ function Profile(props){
         <Animation/>
         <ProfilePicture />
         <div ref={refExperience}></div>
-        <div style={{ height: "cover" }}>
+        <div style={{ height: "cover", borderBottom: "3px solid #e5e7eb", paddingBottom: "40px" }}>
           <div
             style={{
               fontSize: "50px",
@@ -148,7 +160,7 @@ function Profile(props){
           <TimeLine timeLine={experience} isDisplayLogo={true} />
         </div>
         <div ref={refProject}></div>
-        <div style={{ height: "cover" }}>
+        <div style={{ height: "cover", borderBottom: "3px solid #e5e7eb", paddingBottom: "40px" }}>
           <div
             style={{
               fontSize: "50px",
