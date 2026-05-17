@@ -83,7 +83,19 @@ function Profile(props){
           "Led full-stack development of a job management system (Django/React), delivering transparent activity tracking for clients while enabling internal teams to optimize costs and boost operational efficiency.",
           "Reduced 30% in cloud costs by proposing and implementing a new data analytics architecture and eliminating redundant resources.",
         ],
-        "",
+        "nanolumi.png",
+      ],
+      [
+        "March 2025",
+        "Present",
+        "Hypotenuse AI",
+        [
+          "Developed full-stack features across React/TypeScript frontend and Python/FastAPI backend for an AI-powered ecommerce platform serving 1M+ users",
+          "Built and optimized scalable data pipelines handling millions of product records for Fortune 500 brands",
+          "Architected and deployed AI content generation workflows, improving processing speed and reliability",
+          "Contributed to infrastructure scaling on AWS to support high-concurrency asynchronous job processing",
+        ],
+        "hypotenuse.svg",
       ],
     ].reverse();
     var project=[["Jun 2021","May 2021", "Electrical Field", ["Used  SDL2 to stimulate the Electrical Field to use in teaching Physics"]],
@@ -134,7 +146,7 @@ function Profile(props){
         <Animation/>
         <ProfilePicture />
         <div ref={refExperience}></div>
-        <div style={{ height: "cover" }}>
+        <div style={{ height: "cover", borderBottom: "3px solid #e5e7eb", paddingBottom: "40px" }}>
           <div
             style={{
               fontSize: "50px",
@@ -148,7 +160,7 @@ function Profile(props){
           <TimeLine timeLine={experience} isDisplayLogo={true} />
         </div>
         <div ref={refProject}></div>
-        <div style={{ height: "cover" }}>
+        <div style={{ height: "cover", borderBottom: "3px solid #e5e7eb", paddingBottom: "40px" }}>
           <div
             style={{
               fontSize: "50px",
