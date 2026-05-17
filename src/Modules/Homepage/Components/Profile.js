@@ -95,7 +95,7 @@ function Profile(props){
           "Architected and deployed AI content generation workflows, improving processing speed and reliability",
           "Contributed to infrastructure scaling on AWS to support high-concurrency asynchronous job processing",
         ],
-        "hypotenuse.png",
+        "hypotenuse.svg",
       ],
     ].reverse();
     var project=[["Jun 2021","May 2021", "Electrical Field", ["Used  SDL2 to stimulate the Electrical Field to use in teaching Physics"]],
