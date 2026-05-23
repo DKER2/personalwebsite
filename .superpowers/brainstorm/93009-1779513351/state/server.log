@@ -1,0 +1,5 @@
+{"type":"server-started","port":65365,"host":"127.0.0.1","url_host":"localhost","url":"http://localhost:65365","screen_dir":"/Users/bryan/Documents/Workspace/personalwebsite/.superpowers/brainstorm/93009-1779513351/content","state_dir":"/Users/bryan/Documents/Workspace/personalwebsite/.superpowers/brainstorm/93009-1779513351/state"}
+{"type":"screen-added","file":"/Users/bryan/Documents/Workspace/personalwebsite/.superpowers/brainstorm/93009-1779513351/content/approaches.html"}
+{"type":"screen-added","file":"/Users/bryan/Documents/Workspace/personalwebsite/.superpowers/brainstorm/93009-1779513351/content/design-v1.html"}
+{"type":"screen-added","file":"/Users/bryan/Documents/Workspace/personalwebsite/.superpowers/brainstorm/93009-1779513351/content/design-v2-light.html"}
+{"type":"server-stopped","reason":"idle timeout"}

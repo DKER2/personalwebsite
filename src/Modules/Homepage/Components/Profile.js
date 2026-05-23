@@ -76,8 +76,8 @@ function Profile(props){
       ],
       [
         "May 2025",
-        "Present",
-        "",
+        "April 2026",
+        "Nanolumi",
         [
           "Drove 90% bug reduction and enhanced security by implementing comprehensive testing, while refactoring an Django outsourced codebase to improve maintainability, scalability, and performance.",
           "Led full-stack development of a job management system (Django/React), delivering transparent activity tracking for clients while enabling internal teams to optimize costs and boost operational efficiency.",
@@ -90,10 +90,9 @@ function Profile(props){
         "Present",
         "",
         [
-          "Developed full-stack features across React/TypeScript frontend and Python/FastAPI backend for an AI-powered ecommerce platform serving 1M+ users",
-          "Built and optimized scalable data pipelines handling millions of product records for Fortune 500 brands",
-          "Architected and deployed AI content generation workflows, improving processing speed and reliability",
-          "Contributed to infrastructure scaling on AWS to support high-concurrency asynchronous job processing",
+          "Enhanced system reliability by increasing the integration success rate of heavy-load operations from 89% to a 99.99% SLA.",
+          "Architected AI feedback loops by building a system that enables proactive learning to improve generation quality.",
+          "Streamlined platform workflows by managing the end-to-end user journey to deliver a smooth and efficient experience.",
         ],
         "hypotenuse.svg",
       ],
