@@ -37,20 +37,20 @@ function TimeLine(props){
               }}
             >
               <div className="flex content-center items-center" style={{ fontSize: "30px", fontWeight: "500" }}>
-                {title}
-                {isDisplayLogo &&
-                <div className='m-3'>
+                {isDisplayLogo && imagePath && (
                   <img
-                    src={process.env.PUBLIC_URL + `/${imagePath}`}
+                    src={process.env.PUBLIC_URL + "/" + imagePath}
                     alt="CompanyLogo"
-                    style={{ 
-                      height: "50px", 
-                      width: "auto", 
+                    style={{
+                      height: "50px",
+                      width: "auto",
                       maxWidth: "150px",
-                      objectFit: "contain" 
+                      objectFit: "contain",
+                      marginRight: "16px",
                     }}
                   />
-                </div>}
+                )}
+                <span>{title}</span>
               </div>
               <div>
                 {details.map((timeLineItem, index) => {
