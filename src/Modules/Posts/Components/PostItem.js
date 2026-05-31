@@ -3,22 +3,26 @@ import ReactMarkdown from "react-markdown";
 import './PostItem.css';
 
 export function formatFileName(filePath) {
-    // Step 1: Remove "./" or any path elements
-    let fileName = filePath.replace(/^.*[\\/]/, ''); // This will remove any leading directory path
-  
-    // Step 2: Remove the file extension ".md"
-    fileName = fileName.replace(/\.[^/.]+$/, ''); // Removes the extension
-  
-    // Step 3: Add spaces before capital letters (camel case to space-separated words)
-    fileName = fileName.replace(/([a-z])([A-Z])/g, '$1 $2'); // Add space between lowercase and uppercase letters
-  
-    return fileName; // Final formatted string
+  let fileName = filePath.replace(/^.*[\\/]/, '');
+  fileName = fileName.replace(/\.[^/.]+$/, '');
+  fileName = fileName.replace(/^\d{4}-\d{2}-\d{2}-/, '');
+  fileName = fileName.replace(/([a-z])([A-Z])/g, '$1 $2');
+  return fileName;
+}
+
+export function extractDate(filePath) {
+  let fileName = filePath.replace(/^.*[\\/]/, '');
+  const match = fileName.match(/^(\d{4}-\d{2}-\d{2})/);
+  return match ? match[1] : '';
 }
 
 function PostItem({ post, onClick }) {
     return (
         <div className="post-item" onClick={onClick}>
-            <h2 className="post-title">{formatFileName(post.fileName)}</h2>
+            <div style={{ display: 'flex', alignItems: 'baseline', gap: '12px', flexWrap: 'wrap' }}>
+              <h2 className="post-title" style={{ margin: 0 }}>{formatFileName(post.fileName)}</h2>
+              <span style={{ fontSize: '13px', color: '#888', fontWeight: '500' }}>{extractDate(post.fileName)}</span>
+            </div>
             <div className="post-content">
                 <ReactMarkdown>{post.content.substring(0, 200) + "..."}</ReactMarkdown>
             </div>
