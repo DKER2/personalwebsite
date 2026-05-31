@@ -3,30 +3,37 @@ import PostItem from './PostItem';
 import { useNavigate } from 'react-router-dom';
 
 export const importAllFiles = async (r) => {
-    // Map each file and fetch its content as text
-    const files = r.keys().map((fileName) => {
-      return fetch(r(fileName))
-        .then((response) => response.text())
-        .then((text) => (
-          {
-          fileName,
-          content: text,
-        }));
-    });
-  
-    // Wait for all fetch operations to complete
-    return Promise.all(files);
+    const results = await Promise.allSettled(
+      r.keys().map((fileName) => {
+        return fetch(r(fileName))
+          .then((response) => response.text())
+          .then((text) => {
+            const name = fileName.replace(/^.*[\\/]/, '');
+            const match = name.match(/^(\d{4}-\d{2}-\d{2})/);
+            return {
+              fileName: name,
+              date: match ? match[1] : '',
+              content: text,
+            };
+          });
+      })
+    );
+
+    return results
+      .filter((r) => r.status === 'fulfilled')
+      .map((r) => r.value);
   };
 
 const PostsBoard = () => {
   const [posts, setPosts] = useState([]);
   const navigate = useNavigate();
-  const [loading, setLoading] = useState(true); 
+  const [loading, setLoading] = useState(true);
 
   useLayoutEffect(() => {
     const loadPosts = async () => {
         const allPosts = await importAllFiles(require.context('../Assets/Posts/', true, /\.md$/));
-        setPosts(allPosts); // Set the fetched posts content to state
+        allPosts.sort((a, b) => b.date.localeCompare(a.date));
+        setPosts(allPosts);
         setLoading(false);
     };
 
@@ -34,14 +41,13 @@ const PostsBoard = () => {
   }, []);
 
   const navigateToPost = (post) => {
-    console.log(post);
     navigate(`/posts/${post.fileName}`);
   };
 
   return (
     <div>
       {loading ? (
-        <p>Loading posts...</p> // Show a loading message while posts are being fetched
+        <p>Loading posts...</p>
       ) : (
         <ul>
           {posts.map((post) => (
