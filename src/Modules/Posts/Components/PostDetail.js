@@ -1,32 +1,31 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
-import { formatFileName } from './PostItem';
+import { formatFileName, extractDate } from './PostItem';
 import { importAllFiles } from './PostsBoard';
 import './PostDetail.css';
 
 function PostDetail() {
-  const { postName } = useParams(); // Extract the post name from the URL
+  const { postName } = useParams();
   const [postContent, setPostContent] = useState('');
+  const [postDate, setPostDate] = useState('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Fetch posts dynamically using require.context and fetch()
     const fetchPosts = async () => {
       try {
         const allPosts = await importAllFiles(require.context('../Assets/Posts', true, /\.md$/));
-
-        // Find the specific post based on postName
         const post = allPosts.find((p) => p.fileName.replace(/^.*[\\/]/, '') === postName);
 
         if (post) {
-          setPostContent(post.content); // Set the fetched post content
+          setPostContent(post.content);
+          setPostDate(extractDate(post.fileName));
         } else {
-          setError('Post not found'); // Set error if the post is not found
+          setError('Post not found');
         }
       } catch (err) {
-        setError('Error loading posts'); // Handle any errors during fetch
+        setError('Error loading posts');
       } finally {
         setLoading(false);
       }
@@ -46,10 +45,11 @@ function PostDetail() {
   return (
     <article className="post">
       <header className="post-header">
-        <h1 className="post-title">{formatFileName(postName)}</h1> {/* Format the post name */}
+        <h1 className="post-title">{formatFileName(postName)}</h1>
+        {postDate && <p className="post-date" style={{ color: '#888', fontSize: '14px', marginTop: '4px' }}>{postDate}</p>}
       </header>
       <section className="post-content">
-        <ReactMarkdown>{postContent}</ReactMarkdown> {/* Render the markdown content */}
+        <ReactMarkdown>{postContent}</ReactMarkdown>
       </section>
     </article>
   );
