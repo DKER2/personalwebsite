@@ -6,10 +6,15 @@ export const importAllFiles = async (r) => {
     const files = r.keys().map((fileName) => {
       return fetch(r(fileName))
         .then((response) => response.text())
-        .then((text) => ({
-          fileName,
-          content: text,
-        }));
+        .then((text) => {
+          const name = fileName.replace(/^.*[\\/]/, '');
+          const match = name.match(/^(\d{4}-\d{2}-\d{2})/);
+          return {
+            fileName: name,
+            date: match ? match[1] : '',
+            content: text,
+          };
+        });
     });
     return Promise.all(files);
   };
@@ -22,7 +27,7 @@ const PostsBoard = () => {
   useLayoutEffect(() => {
     const loadPosts = async () => {
         const allPosts = await importAllFiles(require.context('../Assets/Posts/', true, /\.md$/));
-        allPosts.sort((a, b) => b.fileName.localeCompare(a.fileName));
+        allPosts.sort((a, b) => b.date.localeCompare(a.date));
         setPosts(allPosts);
         setLoading(false);
     };

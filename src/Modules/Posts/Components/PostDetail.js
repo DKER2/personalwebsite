@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
-import { formatFileName, extractDate } from './PostItem';
+import { formatFileName } from './PostItem';
 import { importAllFiles } from './PostsBoard';
 import './PostDetail.css';
 
@@ -16,11 +16,11 @@ function PostDetail() {
     const fetchPosts = async () => {
       try {
         const allPosts = await importAllFiles(require.context('../Assets/Posts', true, /\.md$/));
-        const post = allPosts.find((p) => p.fileName.replace(/^.*[\\/]/, '') === postName);
+        const post = allPosts.find((p) => p.fileName === postName);
 
         if (post) {
           setPostContent(post.content);
-          setPostDate(extractDate(post.fileName));
+          setPostDate(post.date || '');
         } else {
           setError('Post not found');
         }
