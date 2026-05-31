@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/personalwebsite/static/css/main.d714d6b3.css",
-    "main.js": "/personalwebsite/static/js/main.61a6697d.js",
+    "main.js": "/personalwebsite/static/js/main.fbd8934d.js",
     "static/js/787.6568e1bc.chunk.js": "/personalwebsite/static/js/787.6568e1bc.chunk.js",
     "static/media/2024-10-15-GoogleSummerOfCodeProposal.md": "/personalwebsite/static/media/2024-10-15-GoogleSummerOfCodeProposal.5e5b6bffc414ddef9062.md",
     "static/media/2025-09-27-ToastOnApiErrorWithAndroidJetpack.md": "/personalwebsite/static/media/2025-09-27-ToastOnApiErrorWithAndroidJetpack.3dedbdd3b45559b74fab.md",
     "static/media/2024-10-15-MyJourneyToOpenSource.md": "/personalwebsite/static/media/2024-10-15-MyJourneyToOpenSource.52991ee356915173b423.md",
     "static/media/2025-10-14-HowAiLeverageApi.md": "/personalwebsite/static/media/2025-10-14-HowAiLeverageApi.e06926879f46800063f0.md",
     "static/media/2026-01-14-MyFirstChapter.md": "/personalwebsite/static/media/2026-01-14-MyFirstChapter.25dbbee645de8be2d321.md",
+    "static/media/2026-05-31-NextChapterAtHypotenuse.md": "/personalwebsite/static/media/2026-05-31-NextChapterAtHypotenuse.5110dd7a5bc059bb8ac2.md",
     "static/media/2025-01-11-WorkingAtStartup.md": "/personalwebsite/static/media/2025-01-11-WorkingAtStartup.b41459afca8bb8a1d65c.md",
     "index.html": "/personalwebsite/index.html",
     "main.d714d6b3.css.map": "/personalwebsite/static/css/main.d714d6b3.css.map",
-    "main.61a6697d.js.map": "/personalwebsite/static/js/main.61a6697d.js.map",
+    "main.fbd8934d.js.map": "/personalwebsite/static/js/main.fbd8934d.js.map",
     "787.6568e1bc.chunk.js.map": "/personalwebsite/static/js/787.6568e1bc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d714d6b3.css",
-    "static/js/main.61a6697d.js"
+    "static/js/main.fbd8934d.js"
   ]
 }
