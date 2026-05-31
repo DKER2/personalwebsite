@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personalwebsite/static/css/main.b169c911.css",
-    "main.js": "/personalwebsite/static/js/main.71653670.js",
+    "main.css": "/personalwebsite/static/css/main.d714d6b3.css",
+    "main.js": "/personalwebsite/static/js/main.61a6697d.js",
     "static/js/787.6568e1bc.chunk.js": "/personalwebsite/static/js/787.6568e1bc.chunk.js",
     "static/media/2024-10-15-GoogleSummerOfCodeProposal.md": "/personalwebsite/static/media/2024-10-15-GoogleSummerOfCodeProposal.5e5b6bffc414ddef9062.md",
     "static/media/2025-09-27-ToastOnApiErrorWithAndroidJetpack.md": "/personalwebsite/static/media/2025-09-27-ToastOnApiErrorWithAndroidJetpack.3dedbdd3b45559b74fab.md",
@@ -10,12 +10,12 @@
     "static/media/2026-01-14-MyFirstChapter.md": "/personalwebsite/static/media/2026-01-14-MyFirstChapter.25dbbee645de8be2d321.md",
     "static/media/2025-01-11-WorkingAtStartup.md": "/personalwebsite/static/media/2025-01-11-WorkingAtStartup.b41459afca8bb8a1d65c.md",
     "index.html": "/personalwebsite/index.html",
-    "main.b169c911.css.map": "/personalwebsite/static/css/main.b169c911.css.map",
-    "main.71653670.js.map": "/personalwebsite/static/js/main.71653670.js.map",
+    "main.d714d6b3.css.map": "/personalwebsite/static/css/main.d714d6b3.css.map",
+    "main.61a6697d.js.map": "/personalwebsite/static/js/main.61a6697d.js.map",
     "787.6568e1bc.chunk.js.map": "/personalwebsite/static/js/787.6568e1bc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b169c911.css",
-    "static/js/main.71653670.js"
+    "static/css/main.d714d6b3.css",
+    "static/js/main.61a6697d.js"
   ]
 }
