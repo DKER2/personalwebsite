@@ -3,20 +3,25 @@ import PostItem from './PostItem';
 import { useNavigate } from 'react-router-dom';
 
 export const importAllFiles = async (r) => {
-    const files = r.keys().map((fileName) => {
-      return fetch(r(fileName))
-        .then((response) => response.text())
-        .then((text) => {
-          const name = fileName.replace(/^.*[\\/]/, '');
-          const match = name.match(/^(\d{4}-\d{2}-\d{2})/);
-          return {
-            fileName: name,
-            date: match ? match[1] : '',
-            content: text,
-          };
-        });
-    });
-    return Promise.all(files);
+    const results = await Promise.allSettled(
+      r.keys().map((fileName) => {
+        return fetch(r(fileName))
+          .then((response) => response.text())
+          .then((text) => {
+            const name = fileName.replace(/^.*[\\/]/, '');
+            const match = name.match(/^(\d{4}-\d{2}-\d{2})/);
+            return {
+              fileName: name,
+              date: match ? match[1] : '',
+              content: text,
+            };
+          });
+      })
+    );
+
+    return results
+      .filter((r) => r.status === 'fulfilled')
+      .map((r) => r.value);
   };
 
 const PostsBoard = () => {
@@ -36,7 +41,6 @@ const PostsBoard = () => {
   }, []);
 
   const navigateToPost = (post) => {
-    console.log(post);
     navigate(`/posts/${post.fileName}`);
   };
 
