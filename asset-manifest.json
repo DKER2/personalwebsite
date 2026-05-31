@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/personalwebsite/static/css/main.43ed7280.css",
-    "main.js": "/personalwebsite/static/js/main.9baaf7dd.js",
+    "main.css": "/personalwebsite/static/css/main.b169c911.css",
+    "main.js": "/personalwebsite/static/js/main.3b5158d2.js",
     "static/js/787.6568e1bc.chunk.js": "/personalwebsite/static/js/787.6568e1bc.chunk.js",
-    "static/media/GoogleSummerOfCodeProposal.md": "/personalwebsite/static/media/GoogleSummerOfCodeProposal.5e5b6bffc414ddef9062.md",
-    "static/media/ToastOnApiErrorWithAndroidJetpack.md": "/personalwebsite/static/media/ToastOnApiErrorWithAndroidJetpack.3dedbdd3b45559b74fab.md",
-    "static/media/MyJourneyToOpenSource.md": "/personalwebsite/static/media/MyJourneyToOpenSource.52991ee356915173b423.md",
-    "static/media/HowAiLeverageApi.md": "/personalwebsite/static/media/HowAiLeverageApi.e06926879f46800063f0.md",
-    "static/media/MyFirstChapter.md": "/personalwebsite/static/media/MyFirstChapter.25dbbee645de8be2d321.md",
-    "static/media/WorkingAtStartup.md": "/personalwebsite/static/media/WorkingAtStartup.b41459afca8bb8a1d65c.md",
+    "static/media/2024-10-15-GoogleSummerOfCodeProposal.md": "/personalwebsite/static/media/2024-10-15-GoogleSummerOfCodeProposal.5e5b6bffc414ddef9062.md",
+    "static/media/2025-09-27-ToastOnApiErrorWithAndroidJetpack.md": "/personalwebsite/static/media/2025-09-27-ToastOnApiErrorWithAndroidJetpack.3dedbdd3b45559b74fab.md",
+    "static/media/2024-10-15-MyJourneyToOpenSource.md": "/personalwebsite/static/media/2024-10-15-MyJourneyToOpenSource.52991ee356915173b423.md",
+    "static/media/2025-10-14-HowAiLeverageApi.md": "/personalwebsite/static/media/2025-10-14-HowAiLeverageApi.e06926879f46800063f0.md",
+    "static/media/2026-01-14-MyFirstChapter.md": "/personalwebsite/static/media/2026-01-14-MyFirstChapter.25dbbee645de8be2d321.md",
+    "static/media/2025-01-11-WorkingAtStartup.md": "/personalwebsite/static/media/2025-01-11-WorkingAtStartup.b41459afca8bb8a1d65c.md",
     "index.html": "/personalwebsite/index.html",
-    "main.43ed7280.css.map": "/personalwebsite/static/css/main.43ed7280.css.map",
-    "main.9baaf7dd.js.map": "/personalwebsite/static/js/main.9baaf7dd.js.map",
+    "main.b169c911.css.map": "/personalwebsite/static/css/main.b169c911.css.map",
+    "main.3b5158d2.js.map": "/personalwebsite/static/js/main.3b5158d2.js.map",
     "787.6568e1bc.chunk.js.map": "/personalwebsite/static/js/787.6568e1bc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.43ed7280.css",
-    "static/js/main.9baaf7dd.js"
+    "static/css/main.b169c911.css",
+    "static/js/main.3b5158d2.js"
   ]
 }
